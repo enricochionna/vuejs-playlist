@@ -7,23 +7,11 @@ new Vue({
     y: 0,
   },
   methods: {
-    greet: function(time) {
-      return 'Good ' + time + ' ' + this.name;
+    logName: function() {
+      console.log("You entered your name");
     },
-    add: function(inc) {
-      this.age += inc;
-    },
-    subtract: function(dec) {
-      this.age -= dec;
-    },
-    updateXY: function(event) {
-      console.log(event)
-      this.x = event.offsetX;
-      this.y = event.offsetY
-
-    },
-    click: function() {
-      alert('You clicked me!');
+    logAge: function(inc) {
+      console.log("You entered your age");
     }
   }
 });
