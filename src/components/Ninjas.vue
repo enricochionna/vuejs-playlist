@@ -1,7 +1,10 @@
 <template>
+<div>
+  <h1>List of ninjas</h1>
   <ul>
     <li v-for="ninja in ninjas" :key="ninja">{{ ninja }}</li>
   </ul>
+</div>
 </template>
 
 <script>
@@ -14,6 +17,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+h1{
+  color:green
+}
 </style>
