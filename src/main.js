@@ -4,9 +4,10 @@ import VueResource from 'vue-resource'
 
 Vue.use(VueResource);
 
-Vue.filter('to-uppercase', function(value) {
+//Filters
+/* Vue.filter('to-uppercase', function(value) {
   return value.toUpperCase();
-});
+}); */
 
 Vue.filter('snippet', function(value) {
   return value.slice(0, 100) + '...';
